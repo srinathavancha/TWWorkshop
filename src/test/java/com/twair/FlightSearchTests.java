@@ -76,7 +76,7 @@ public class FlightSearchTests {
         Assert.assertEquals(source, flights.get(0).getSource());
         Assert.assertEquals(destination, flights.get(0).getDestination());
         Assert.assertTrue(flights.get(0).getNumber()+" can allot atleast"+seatsRequired,
-                (flights.get(0).getPlane().getNumberOfSeats() > 1));
+                (flights.get(0).getPlane().getNumberOfSeats() > 0));
 
     }
 }
